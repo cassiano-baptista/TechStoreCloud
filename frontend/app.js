@@ -1,4 +1,4 @@
-const apiUrl = "https://localhost:7164/api/produtos";
+const apiUrl = "https://app-techstorecloud-api-2026-g5emasgwc0cba2ah.mexicocentral-01.azurewebsites.net/api/produtos";
 
 const formulario = document.getElementById("form-produto");
 const campoId = document.getElementById("produto-id");
