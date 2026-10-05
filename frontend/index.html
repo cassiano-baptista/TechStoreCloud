@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore Cloud</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="topo-conteudo">
+            <h1>TechStore Cloud</h1>
+            <p>Sistema de Cadastro de Produtos</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Cadastro de Produto</h2>
+
+            <form id="form-produto">
+
+                <input type="hidden" id="produto-id">
+
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text"
+                           id="nome"
+                           placeholder="Digite o nome do produto"
+                           required>
+                </div>
+
+                <div class="campo">
+                    <label for="descricao">Descrição</label>
+                    <input type="text"
+                           id="descricao"
+                           placeholder="Digite a descrição">
+                </div>
+
+                <div class="campo">
+                    <label for="preco">Preço</label>
+                    <input type="number"
+                           id="preco"
+                           step="0.01"
+                           placeholder="0,00"
+                           required>
+                </div>
+
+                <div class="botoes-formulario">
+
+                    <button type="submit" id="botao-salvar" class="botao salvar">
+                        Salvar
+                    </button>
+
+                    <button type="button" id="botao-cancelar" class="botao cancelar">
+                        Cancelar
+                    </button>
+
+                </div>
+
+            </form>
+        </section>
+
+        <section class="card produtos-card">
+
+            <div class="titulo-produtos">
+                <div>
+                    <h2>Produtos</h2>
+                    <p>Produtos cadastrados no sistema</p>
+                </div>
+            </div>
+
+            <div id="lista-produtos"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        TechStore Cloud
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
